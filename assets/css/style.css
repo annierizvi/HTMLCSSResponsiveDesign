@@ -58,15 +58,75 @@ h1{
   padding-left: 10%;
 }
 
-h2{ 
-}
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;  
-}
-
 p {
   margin: 0;
 }
+
+.container {  display: grid;
+  margin: 0 5% 0 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "About-me About-me-content About-me-content About-me-content About-me-content"
+    "Work Main-project Main-project Main-project Main-project"
+    "Work Main-project Main-project Main-project Main-project"
+    "Work project1 project1 Project2 Project2"
+    "Work project3 project3 project4 project4"
+    "Contact-Me Phone Email GitHub Twitter";
+}
+
+.About-me { grid-area: About-me; 
+  text-align: right;
+  font-size: xx-large;
+  padding-right: 50px;
+}
+
+.About-me-content { grid-area: About-me-content; 
+margin-top: 50px;}
+
+.Main-project { grid-area: Main-project;
+background-color: darkgrey; 
+margin-top: 50px;
+margin: 1%;
+border: 5px solid #9dc9cd; 
+opacity: 0.5;}
+
+.project1 { grid-area: project1;
+background-image: url("../images/02-portfolio-1.jpg"); 
+margin: 1%;
+border: 5px solid #9dc9cd; }
+
+.Project2 { grid-area: Project2; 
+  background-image: url("../images/02-portfolio-2.jpg");
+  margin: 1%;
+  border: 5px solid #9dc9cd; }
+
+.project3 { grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg"); 
+  margin: 1%;
+  border: 5px solid #9dc9cd; }
+
+.project4 { grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+  border: 5px solid #9dc9cd;margin: 1%;}
+
+.Work { grid-area: Work;
+  text-align: right; 
+  font-size: xx-large;
+  padding-right: 50px;}
+
+.Contact-Me { grid-area: Contact-Me;
+  text-align: right; 
+font-size: xx-large;
+padding-right: 50px;
+}
+
+.Phone { grid-area: Phone; }
+
+.Email { grid-area: Email; }
+
+.GitHub { grid-area: GitHub; }
+
+.Twitter { grid-area: Twitter; }
