@@ -21,14 +21,14 @@ body {
 }
 body::before {
   content: "";
-  position: fixed; /* Fixed/sticky position */
+  position: fixed; 
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(209, 230, 243, 0.353); /* Blue background with 10% opacity */
-  pointer-events: none; /* Allows clicks to pass through */
-  z-index: 9999; /* Sit on top */
+  background: rgba(209, 230, 243, 0.353); 
+  pointer-events: none; 
+  z-index: 9999; 
 }
 
 header{
